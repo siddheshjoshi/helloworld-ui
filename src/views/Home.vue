@@ -23,7 +23,7 @@ export default {
   methods: {
     submit() {
       console.log("submitting name: ", this.name)
-      api.get("https://frosty-ritchie-functions.netlify.app/.netlify/functions/hello-world?name="+ this.name).then(resp => {
+      api.get("hello-world?name="+ this.name).then(resp => {
         this.respn=resp
       }).catch(err => {
         this.respn=err
