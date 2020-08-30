@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://frosty-ritchie-e137ca.netlify.app/.netlify/functions/",
+  baseURL: "https://frosty-ritchie-functions.netlify.app/.netlify/functions/",
   timeout: 5000,
   headers: {
     "Content-Type": "application/json",
