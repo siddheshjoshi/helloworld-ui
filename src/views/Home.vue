@@ -2,7 +2,7 @@
   <div class="home">
     Enter Name <input v-model="name"  />
     &nbsp;<button @click="submit()"> Submit </button>
-    {{respn.data}}
+    &nbsp;<span v-if="respn">{{respn.data}}</span>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   name: 'Home',
   components: {
   },
-  data: function(){
+  data() {
     return {
       name: undefined,
       respn: undefined
